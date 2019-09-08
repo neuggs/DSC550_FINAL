@@ -19,7 +19,7 @@ class WeekTwoReusable():
 
     def set_df(self, type):
         if type == 'continuous':
-            self.filename = '../data/source/reddit/controversial-comments.jsonl'
+            self.filename = '../data/source/controversial-comments.jsonl'
         full_df = pd.read_json(self.filename, lines=True)
         self.df = full_df.sample(1000)
 
