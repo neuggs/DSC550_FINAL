@@ -1,39 +1,15 @@
-## Frank Neugebauer's Visualizations 
+## Working with Luigi Workflows
 
-Visualizations are a critical element of data science, without which the complexities are difficult to articulate, especially for those who are less interested in data science. There are many types of visualizations and it's important to understand what they are and how they're used. More subtly, the same visualization can be very different depending on the tool used to render it.
+This project shows how Luigi workflows are used as pipelines for data science. A well-formed dataset is used to ensure the data science itself doesn't interfere with how Luigi works.
 
-**This project uses:**
-1. Python
-2. R (RStudio)
-3. Tableau
-4. Power BI
+## How it Works
 
-It's worth noting that part of the project using R and Python _within_ Power BI, which is an interesting mixture of tooling.
+There are two Python files contained within the `workflows` folder that contain all the code. The first workflow (`workflow_one`) is meant to be incremental - everythign that happens in that file also happens in `workflwo_two`. The basic notion, from a data science perspective, is to take a corpus, vectorize it, split it into test and train sets, pickle it (for later use), then use logistic regression to build a predictive model.
 
-### Type of Visualizations
+The dataset used is from Reddit.
 
-- Bar chart
-- Line chart
-- Stacked bar chart
-- Area chart
-- Step chart
-- Tree map
-- Density chart
-- Scatter plot
-- Bubble chart
-- Word cloud
-- Sparkline
-- Heatmap
-- Contour chart
-- Spatial chart
-- Boxplot
-- Bullet chart
-- Histogram
-
-I did not include donut charts because I'm opposed to a pie chart with a circle in the middle. For that matter, I'm opposed to pie charts.
-
-## NOTICE
-It's important to understand that the visualizations and the code are separate, which means you have to download or fork the entire repository for any of this to work.
+# Running It
+To see the entire pipeline run with PDF outputs from Luigi, run `workflwo_two.py`.
 
 
 
