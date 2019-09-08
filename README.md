@@ -13,5 +13,8 @@ The dataset used is from Reddit.
 ## Running It
 To see the entire pipeline run with PDF outputs from Luigi, run `workflwo_two.py`.
 
+## NOTE
+You need to have the controversial-comments.json dataset from Reddit and put it into the /data/source directory.
+
 
 
