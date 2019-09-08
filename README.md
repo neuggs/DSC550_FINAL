@@ -1,4 +1,4 @@
-## Working with Luigi Workflows
+# Working with Luigi Workflows
 
 This project shows how Luigi workflows are used as pipelines for data science. A well-formed dataset is used to ensure the data science itself doesn't interfere with how Luigi works.
 
@@ -8,7 +8,7 @@ There are two Python files contained within the `workflows` folder that contain 
 
 The dataset used is from Reddit.
 
-# Running It
+## Running It
 To see the entire pipeline run with PDF outputs from Luigi, run `workflwo_two.py`.
 
 
