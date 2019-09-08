@@ -1,4 +1,4 @@
-## Workingg with Luigi Workflows
+## Working with Luigi Workflows
 
 This project shows how Luigi workflows are used as pipelines for data science. A well-formed dataset is used to ensure the data science itself doesn't interfere with how Luigi works.
 
