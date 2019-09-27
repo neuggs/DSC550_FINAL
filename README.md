@@ -2,6 +2,22 @@
 
 This project shows how Luigi workflows are used as pipelines for data science. A well-formed dataset is used to ensure the data science itself doesn't interfere with how Luigi works.
 
+# Requirements
+
+The project was created using PyCharm, but any IDE should work. There are several packages imported including:
+
+* luigi
+* numpy
+* pandas
+* fpdf
+* re
+* gc
+* pickle
+* sklearn
+* nltk
+
+You can use `pip install` (or whatever your preferred package manager is) to install the packages.
+
 ## How it Works
 
 There are two Python files contained within the `workflows` folder that contain all the code. The first workflow (`workflow_one`) just shows how Luigi works with a very simple example. The real workflow is contained within `workflow_two` and is the genesis of this project.
