@@ -26,7 +26,9 @@ The basic notion, from a data science perspective, is to take a corpus, vectoriz
 
 The dataset used is from Reddit.
 
-## Running It
+## Running Luigi
+You need to pass arguments to Luigi in order for it to work. (You do this via Python.) You can do this from the command line or add arguments to the .py file run configuration in your IDE.
+
 To see the entire pipeline run with PDF outputs from Luigi, run `workflwo_two.py`.
 
 ## NOTE
