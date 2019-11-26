@@ -3,12 +3,12 @@ import numpy as np
 import pandas as pd
 from fpdf import FPDF
 
-class WeekOnePartOne(luigi.Task):
+class One(luigi.Task):
     def requires(self):
         return []
 
     def output(self):
-        return luigi.LocalTarget(path='../reports/week_one_part_one.pdf')
+        return luigi.LocalTarget(path='../reports/simple_part_one.pdf')
 
     def run(self):
         intervals = np.linspace(0, 1)
@@ -22,12 +22,12 @@ class WeekOnePartOne(luigi.Task):
         pdf.multi_cell(800, 5, str(combined))
         pdf.output(self.output().path, 'F')
 
-class WeekOnePartTwo(luigi.Task):
+class Two(luigi.Task):
     def requires(self):
-        return [WeekOnePartOne()]
+        return [One()]
 
     def output(self):
-        return luigi.LocalTarget('../reports/week_one_part_two.pdf')
+        return luigi.LocalTarget('../reports/simple_part_two.pdf')
 
     def run(self):
         ran_array = np.random.randn(3,5)
@@ -44,12 +44,12 @@ class WeekOnePartTwo(luigi.Task):
                        )
         pdf.output(self.output().path, 'F')
 
-class WeekOnePartThree(luigi.Task):
+class Three(luigi.Task):
     def requires(self):
-        return [WeekOnePartTwo()]
+        return [Two()]
 
     def output(self):
-        return luigi.LocalTarget("../reports/week_one_part_three.pdf")
+        return luigi.LocalTarget("../reports/simple_part_three.pdf")
 
     def run(self):
         ran_array_2 = np.random.randn(5,5)
